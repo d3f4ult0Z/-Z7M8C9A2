@@ -28,6 +28,8 @@
 		9655891628C686E9007E6513 /* Z7M8C9A2_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655891528C686E9007E6513 /* Z7M8C9A2_WatchKit_AppTests.swift */; };
 		9655892028C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655891F28C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift */; };
 		9655892228C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */; };
+		A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96686B128C68B98003B2EF8 /* StartViewController.swift */; };
+		A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96686B228C68B98003B2EF8 /* StartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +132,8 @@
 		9655891B28C686E9007E6513 /* Z7M8C9A2 WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Z7M8C9A2 WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9655891F28C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z7M8C9A2_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A96686B128C68B98003B2EF8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		A96686B228C68B98003B2EF8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +213,7 @@
 		965588C628C686E6007E6513 /* Z7M8C9A2 */ = {
 			isa = PBXGroup;
 			children = (
+				A96686B028C68B69003B2EF8 /* Views */,
 				965588C728C686E6007E6513 /* AppDelegate.swift */,
 				965588C928C686E6007E6513 /* SceneDelegate.swift */,
 				965588CB28C686E6007E6513 /* ViewController.swift */,
@@ -275,6 +280,15 @@
 				9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */,
 			);
 			path = "Z7M8C9A2 WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		A96686B028C68B69003B2EF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A96686B128C68B98003B2EF8 /* StartViewController.swift */,
+				A96686B228C68B98003B2EF8 /* StartViewController.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -472,6 +486,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				965588D428C686E8007E6513 /* LaunchScreen.storyboard in Resources */,
+				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 			);
@@ -530,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
+				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 			);
