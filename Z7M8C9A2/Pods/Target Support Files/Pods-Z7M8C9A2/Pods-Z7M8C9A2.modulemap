@@ -1,0 +1,6 @@
+framework module Pods_Z7M8C9A2 {
+  umbrella header "Pods-Z7M8C9A2-umbrella.h"
+
+  export *
+  module * { export * }
+}
