@@ -7,14 +7,11 @@
 
 import UIKit
 
-/*
- Simple example of UIPageViewController.
-*/
 
 class PaginationViewController: UIPageViewController {
 
     var pages = [UIViewController]()
-    let pageControl = UIPageControl() // external - not part of underlying pages
+    let pageControl = UIPageControl()
     let initialPage = 0
     
     override func viewDidLoad() {
@@ -34,7 +31,9 @@ extension PaginationViewController {
         
         pageControl.addTarget(self, action: #selector(pageControlTapped(_:)), for: .valueChanged)
         self.view.backgroundColor = UIColor.systemBackground
-        // create an array of viewController
+        
+        // crea una array de viewController
+        
         let page1 = ViewController1()
         let page2 = ViewController2()
         let page3 = ViewController3()
@@ -45,8 +44,9 @@ extension PaginationViewController {
         pages.append(page3)
         pages.append(page4)
         
-        // set initial viewController to be displayed
-        // Note: We are not passing in all the viewControllers here. Only the one to be displayed.
+        // establecer viewController inicial para que se muestre
+        // Nota: No estamos pasando todos los viewControllers aquí. Sólo el que se va a mostrar.
+        
         setViewControllers([pages[initialPage]], direction: .forward, animated: true, completion: nil)
         self.view.backgroundColor = UIColor.systemBackground
     }
@@ -74,8 +74,8 @@ extension PaginationViewController {
 
 extension PaginationViewController {
     
-    // How we change page when pageControl tapped.
-    // Note - Can only skip ahead on page at a time.
+    // Cómo cambiamos de página cuando pulsamos pageControl.
+    // Nota: solo se puede saltar una página a la vez.
     @objc func pageControlTapped(_ sender: UIPageControl) {
         setViewControllers([pages[sender.currentPage]], direction: .forward, animated: true, completion: nil)
     }
@@ -90,9 +90,9 @@ extension PaginationViewController: UIPageViewControllerDataSource {
         guard let currentIndex = pages.firstIndex(of: viewController) else { return nil }
         
         if currentIndex == 0 {
-            return pages.last               // wrap to last
+            return pages.last
         } else {
-            return pages[currentIndex - 1]  // go previous
+            return pages[currentIndex - 1]
         }
     }
     
@@ -101,9 +101,9 @@ extension PaginationViewController: UIPageViewControllerDataSource {
         guard let currentIndex = pages.firstIndex(of: viewController) else { return nil }
 
         if currentIndex < pages.count - 1 {
-            return pages[currentIndex + 1]  // go next
+            return pages[currentIndex + 1]
         } else {
-            return pages.first              // wrap to first
+            return pages.first
         }
     }
 }
@@ -112,7 +112,7 @@ extension PaginationViewController: UIPageViewControllerDataSource {
 
 extension PaginationViewController: UIPageViewControllerDelegate {
     
-    // How we keep our pageControl in sync with viewControllers
+    // Cómo mantenemos nuestro pageControl sincronizado con viewControllers
     func pageViewController(_ pageViewController: UIPageViewController, didFinishAnimating finished: Bool, previousViewControllers: [UIViewController], transitionCompleted completed: Bool) {
         
         guard let viewControllers = pageViewController.viewControllers else { return }
