@@ -24,7 +24,6 @@ class StartOnboardingViewController: UIPageViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setup()
         style()
         layout()
@@ -42,15 +41,19 @@ extension StartOnboardingViewController {
         let page1 = OnboardingViewController(imageName: "slide1",
                                              titleText: "Pagina 1",
                                              subtitleText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+       
         let page2 = OnboardingViewController(imageName: "slide2",
                                              titleText: "Pagina 2",
                                              subtitleText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+      
         let page3 = OnboardingViewController(imageName: "slide3",
                                              titleText: "Pagina 3",
                                              subtitleText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+       
         let page4 = OnboardingViewController(imageName: "slide4",
                                              titleText: "Pagina 4",
                                              subtitleText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
+        
         let page5 = LoginViewController()
         
         pages.append(page1)
@@ -71,12 +74,12 @@ extension StartOnboardingViewController {
 
         skipButton.translatesAutoresizingMaskIntoConstraints = false
         skipButton.setTitleColor(.systemBlue, for: .normal)
-        skipButton.setTitle("Skip", for: .normal)
+        skipButton.setTitle("Saltar", for: .normal)
         skipButton.addTarget(self, action: #selector(skipTapped(_:)), for: .primaryActionTriggered)
 
         nextButton.translatesAutoresizingMaskIntoConstraints = false
         nextButton.setTitleColor(.systemBlue, for: .normal)
-        nextButton.setTitle("Next", for: .normal)
+        nextButton.setTitle("Siguiente", for: .normal)
         nextButton.addTarget(self, action: #selector(nextTapped(_:)), for: .primaryActionTriggered)
     }
     
