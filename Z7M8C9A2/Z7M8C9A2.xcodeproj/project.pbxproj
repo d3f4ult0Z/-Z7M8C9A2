@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81028C7AA5300E16901 /* RegisterViewController.swift */; };
+		1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81128C7AA5300E16901 /* RegisterViewController.xib */; };
+		1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */; };
+		1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */; };
 		15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF0C4728C68DF8006B9270 /* LoginViewController.swift */; };
 		15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BF0C4828C68DF8006B9270 /* LoginViewController.xib */; };
 		2BEC3CF5519D7E00264CCDBB /* Pods_Z7M8C9A2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CF719DBA30CA2732F0D51 /* Pods_Z7M8C9A2.framework */; };
@@ -106,6 +110,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1572C81028C7AA5300E16901 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		1572C81128C7AA5300E16901 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
+		1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterFormViewController.xib; sourceTree = "<group>"; };
 		15BF0C4728C68DF8006B9270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		15BF0C4828C68DF8006B9270 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		58A224DDB2A2F06D6F4A2D15 /* Pods-Z7M8C9A2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.debug.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -191,13 +199,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1572C80F28C7A92900E16901 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				1572C81028C7AA5300E16901 /* RegisterViewController.swift */,
+				1572C81128C7AA5300E16901 /* RegisterViewController.xib */,
+				1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */,
+				1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 		4852DF5380AEE9D05CF8E51A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				58A224DDB2A2F06D6F4A2D15 /* Pods-Z7M8C9A2.debug.xcconfig */,
 				E7E60048122CE16091EF7EBE /* Pods-Z7M8C9A2.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -306,6 +324,7 @@
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1572C80F28C7A92900E16901 /* Register */,
 				A96686B128C68B98003B2EF8 /* StartViewController.swift */,
 				A96686B228C68B98003B2EF8 /* StartViewController.xib */,
 				15BF0C4728C68DF8006B9270 /* LoginViewController.swift */,
@@ -523,6 +542,8 @@
 				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
+				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
+				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -621,8 +642,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
+				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
+				1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 			);

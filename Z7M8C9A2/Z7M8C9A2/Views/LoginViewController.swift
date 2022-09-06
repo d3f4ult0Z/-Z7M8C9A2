@@ -10,11 +10,15 @@ import Alamofire
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var btnCrearCuenta: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func actionCrearCuenta(_ sender: Any) {
+        self.navigationController?.pushViewController(RegisterViewController(), animated: true)
+    }
+    
 }
