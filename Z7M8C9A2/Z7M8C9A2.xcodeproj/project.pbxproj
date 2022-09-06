@@ -37,6 +37,9 @@
 		9655892228C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */; };
 		A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96686B128C68B98003B2EF8 /* StartViewController.swift */; };
 		A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96686B228C68B98003B2EF8 /* StartViewController.xib */; };
+		A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */; };
+		A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */; };
+		A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DC28C7F317001E291F /* PaginationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +152,9 @@
 		9F6CF719DBA30CA2732F0D51 /* Pods_Z7M8C9A2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z7M8C9A2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A96686B128C68B98003B2EF8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A96686B228C68B98003B2EF8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartOnboardingViewController.swift; sourceTree = "<group>"; };
+		A97EF0DC28C7F317001E291F /* PaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewController.swift; sourceTree = "<group>"; };
 		E7E60048122CE16091EF7EBE /* Pods-Z7M8C9A2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.release.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -324,6 +330,7 @@
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A97EF0D928C7F2F3001E291F /* Onboarding */,
 				1572C80F28C7A92900E16901 /* Register */,
 				A96686B128C68B98003B2EF8 /* StartViewController.swift */,
 				A96686B228C68B98003B2EF8 /* StartViewController.xib */,
@@ -331,6 +338,16 @@
 				15BF0C4828C68DF8006B9270 /* LoginViewController.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A97EF0D928C7F2F3001E291F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */,
+				A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */,
+				A97EF0DC28C7F317001E291F /* PaginationViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		DD700A41C741E8F3C57F369F /* Frameworks */ = {
@@ -494,6 +511,7 @@
 					};
 					965588ED28C686E8007E6513 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					965588FB28C686E9007E6513 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -641,11 +659,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */,
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
+				A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
 				1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */,
+				A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 			);
@@ -935,6 +956,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -942,12 +964,18 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Wallia.Z7M8C9A2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wallia.Z7M8C9A2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.5;
@@ -960,6 +988,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -967,6 +996,11 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.Wallia.Z7M8C9A2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.Wallia.Z7M8C9A2.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
