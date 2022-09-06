@@ -8,24 +8,37 @@
 import UIKit
 
 class RegisterViewController: UIViewController {
-
+    @IBOutlet weak var btnRegistroApple: UIButton!
+    
+    @IBOutlet weak var btnRegistroFacebook: UIButton!
+    @IBOutlet weak var btnRegistroGoogle: UIButton!
     @IBOutlet weak var btnRegistroFormulario: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setup()
+        self.navigationController?.isNavigationBarHidden = true
+    }
+    
+    func setup() {
+        btnRegistroApple.layer.borderWidth = 1
+        btnRegistroApple.layer.cornerRadius = 5;
+        btnRegistroApple.layer.borderColor = UIColor.black.cgColor
+        btnRegistroApple.backgroundColor = .black
+        
 
-        // Do any additional setup after loading the view.
+        btnRegistroFacebook.layer.cornerRadius = 5;
+    
+        btnRegistroGoogle.layer.cornerRadius = 5;
+     
+        btnRegistroFormulario.layer.cornerRadius = 5;
+        
+        
     }
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnRegistroApple(_ sender: Any) {
     }
-    */
+    
     @IBAction func actionRegistroFormulario(_ sender: Any) {
         self.navigationController?.pushViewController(RegisterFormViewController(), animated: true)
     }
