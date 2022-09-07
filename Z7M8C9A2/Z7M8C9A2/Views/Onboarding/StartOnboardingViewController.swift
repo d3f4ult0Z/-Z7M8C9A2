@@ -54,7 +54,7 @@ extension StartOnboardingViewController {
                                              titleText: "Pagina 4",
                                              subtitleText: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.")
         
-        let page5 = LoginViewController()
+        let page5 = RegisterViewController()
         
         pages.append(page1)
         pages.append(page2)
@@ -118,7 +118,7 @@ extension StartOnboardingViewController: UIPageViewControllerDataSource {
         guard let currentIndex = pages.firstIndex(of: viewController) else { return nil }
         
         if currentIndex == 0 {
-            return pages.last               // wrap last
+            return nil               // wrap last
         } else {
             return pages[currentIndex - 1]  // go previous
         }
@@ -130,9 +130,8 @@ extension StartOnboardingViewController: UIPageViewControllerDataSource {
 
         if currentIndex < pages.count - 1 {
             return pages[currentIndex + 1]  // go next
-        } else {
-            return pages.first              // wrap first
         }
+        return nil
     }
 }
 
@@ -148,6 +147,10 @@ extension StartOnboardingViewController: UIPageViewControllerDelegate {
         
         pageControl.currentPage = currentIndex
         animateControlsIfNeeded()
+        
+        if currentIndex == pages.count - 1{
+            self.navigationController?.pushViewController(RegisterViewController(), animated: false)
+        }
     }
     
     private func animateControlsIfNeeded() {

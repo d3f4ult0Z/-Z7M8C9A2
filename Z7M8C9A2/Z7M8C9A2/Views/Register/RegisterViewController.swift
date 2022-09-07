@@ -19,6 +19,11 @@ class RegisterViewController: UIViewController {
         self.navigationController?.isNavigationBarHidden = true
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     func setup() {
         btnRegistroApple.layer.borderWidth = 1
         btnRegistroApple.layer.cornerRadius = 5;
