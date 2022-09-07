@@ -10,10 +10,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Z7M8C9A2" customModuleProvider="target">
             <connections>
-                <outlet property="btnRegistroApple" destination="HdR-49-D3b" id="g7U-zU-JNJ"/>
-                <outlet property="btnRegistroFacebook" destination="aI5-Xf-bU9" id="LMY-Rs-YkQ"/>
-                <outlet property="btnRegistroFormulario" destination="bgr-af-9dp" id="p7K-Ha-KDW"/>
-                <outlet property="btnRegistroGoogle" destination="M8i-fb-QPk" id="VNB-px-ndS"/>
+                <outlet property="btnRegistroApple" destination="p3E-qf-7eg" id="a6F-9n-V29"/>
+                <outlet property="btnRegistroFacebook" destination="IJa-hw-LqF" id="UNk-Xv-ZQ4"/>
+                <outlet property="btnRegistroFormulario" destination="CFL-mj-etv" id="JoQ-O5-nLc"/>
+                <outlet property="btnRegistroGoogle" destination="YJ5-me-kWG" id="Pnh-cD-6YH"/>
+                <outlet property="lblYaTienesCuenta" destination="P8o-oF-vUi" id="bEc-p1-pFS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,115 +23,131 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mGS-t9-AeB">
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUm-4G-AYq">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="3qN-L0-qQ6">
-                            <rect key="frame" x="30" y="100" width="354" height="571.5"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Qa-AB-9T9">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="820"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¡Bienvenido!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDR-Mp-qu7">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="24"/>
-                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola bienvenido a nuestra aplicación, puedes registrarte de la manera que prefieras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwF-3H-TKV">
-                                    <rect key="frame" x="0.0" y="64" width="354" height="64.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HdR-49-D3b">
-                                    <rect key="frame" x="0.0" y="168.5" width="354" height="40"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="SYG-3k-Juh"/>
-                                    </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Acceder con Apple">
-                                        <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="btnRegistroApple:" destination="-1" eventType="touchUpInside" id="ok0-vc-xPF"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aI5-Xf-bU9">
-                                    <rect key="frame" x="0.0" y="248.5" width="354" height="40"/>
-                                    <color key="backgroundColor" systemColor="linkColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="ANe-JH-27A"/>
-                                    </constraints>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Acceder con facebook"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M8i-fb-QPk">
-                                    <rect key="frame" x="0.0" y="328.5" width="354" height="40"/>
-                                    <color key="backgroundColor" systemColor="systemPinkColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="S0B-sf-6Xl"/>
-                                    </constraints>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Acceder con google"/>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgr-af-9dp">
-                                    <rect key="frame" x="0.0" y="408.5" width="354" height="40"/>
-                                    <color key="backgroundColor" systemColor="systemMintColor"/>
-                                    <constraints>
-                                        <constraint firstAttribute="height" constant="40" id="SRJ-JU-RXa"/>
-                                    </constraints>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                    <state key="normal" title="Acceder con correo"/>
-                                    <connections>
-                                        <action selector="actionRegistroFormulario:" destination="-1" eventType="touchUpInside" id="ae1-Qd-5dI"/>
-                                    </connections>
-                                </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Politicas de privacidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3c8-MG-hVB">
-                                    <rect key="frame" x="0.0" y="488.5" width="354" height="21.5"/>
-                                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Ya tienes cuenta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NCC-fA-Qwu">
-                                    <rect key="frame" x="0.0" y="550" width="354" height="21.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <color key="textColor" systemColor="systemMintColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-mF-8Gh">
+                                    <rect key="frame" x="30" y="20" width="354" height="780"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="¡Bienvenido!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKW-Wt-jKG">
+                                            <rect key="frame" x="0.0" y="0.0" width="354" height="90"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="90" id="2Df-H6-Zyi"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hola bienvenido a nuestra aplicación, puedes registrarte de la manera que prefieras" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Kl-PI-cNs">
+                                            <rect key="frame" x="0.0" y="120" width="354" height="70"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="5c1-Y6-H6g"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3E-qf-7eg">
+                                            <rect key="frame" x="0.0" y="220" width="354" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="bIa-wu-nQ5"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Acceder con apple"/>
+                                            <connections>
+                                                <action selector="btnRegistroApple:" destination="-1" eventType="touchUpInside" id="Uaa-vQ-d3Q"/>
+                                            </connections>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJa-hw-LqF">
+                                            <rect key="frame" x="0.0" y="290" width="354" height="40"/>
+                                            <color key="backgroundColor" systemColor="linkColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="VCp-op-Uzy"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Acceder con facebook"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YJ5-me-kWG">
+                                            <rect key="frame" x="0.0" y="360" width="354" height="40"/>
+                                            <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="97G-3Y-UX9"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Acceder con google"/>
+                                        </button>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFL-mj-etv">
+                                            <rect key="frame" x="0.0" y="430" width="354" height="40"/>
+                                            <color key="backgroundColor" systemColor="systemMintColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="HOO-dU-S3C"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" title="Acceder con correo"/>
+                                            <connections>
+                                                <action selector="actionRegistroFormulario:" destination="-1" eventType="touchUpInside" id="8R7-ba-c94"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Politicas de privacidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZv-dj-MA0">
+                                            <rect key="frame" x="0.0" y="500" width="354" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="4Aj-Zi-YKN"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Ya tienes cuenta?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P8o-oF-vUi">
+                                            <rect key="frame" x="0.0" y="610" width="354" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="vEW-ly-yYg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" systemColor="systemMintColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar como invitado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-8r-6aq">
+                                            <rect key="frame" x="0.0" y="680" width="354" height="100"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="100" id="5EX-VN-B3A"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
                             </subviews>
-                        </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="f4d-hq-0vg">
-                            <rect key="frame" x="30" y="824.5" width="354" height="21.5"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar como invitado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKI-H4-gLY">
-                                    <rect key="frame" x="0.0" y="0.0" width="354" height="21.5"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                        </stackView>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="nPt-mF-8Gh" secondAttribute="bottom" constant="20" id="7hr-0f-AE2"/>
+                                <constraint firstAttribute="trailing" secondItem="nPt-mF-8Gh" secondAttribute="trailing" constant="30" id="9w0-X7-jcQ"/>
+                                <constraint firstItem="nPt-mF-8Gh" firstAttribute="top" secondItem="4Qa-AB-9T9" secondAttribute="top" constant="20" id="C6C-n4-mkw"/>
+                                <constraint firstItem="nPt-mF-8Gh" firstAttribute="leading" secondItem="4Qa-AB-9T9" secondAttribute="leading" constant="30" id="Vlk-85-grF"/>
+                            </constraints>
+                        </view>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="f4d-hq-0vg" firstAttribute="leading" secondItem="mGS-t9-AeB" secondAttribute="leading" constant="30" id="23c-hr-msJ"/>
-                        <constraint firstItem="3qN-L0-qQ6" firstAttribute="leading" secondItem="mGS-t9-AeB" secondAttribute="leading" constant="30" id="4nM-FA-uJE"/>
-                        <constraint firstAttribute="trailing" secondItem="f4d-hq-0vg" secondAttribute="trailing" constant="30" id="cr4-RY-G5r"/>
-                        <constraint firstAttribute="trailing" secondItem="3qN-L0-qQ6" secondAttribute="trailing" constant="30" id="d8F-Fs-T9i"/>
-                        <constraint firstAttribute="bottom" secondItem="f4d-hq-0vg" secondAttribute="bottom" constant="50" id="etx-UZ-3Vt"/>
-                        <constraint firstItem="3qN-L0-qQ6" firstAttribute="top" secondItem="mGS-t9-AeB" secondAttribute="top" constant="100" id="hqx-Ot-CHE"/>
+                        <constraint firstAttribute="bottom" secondItem="4Qa-AB-9T9" secondAttribute="bottom" id="22j-bS-7pO"/>
+                        <constraint firstItem="4Qa-AB-9T9" firstAttribute="top" secondItem="WUm-4G-AYq" secondAttribute="top" id="JNZ-az-UEt"/>
+                        <constraint firstItem="4Qa-AB-9T9" firstAttribute="leading" secondItem="WUm-4G-AYq" secondAttribute="leading" id="Uzv-g4-gvt"/>
+                        <constraint firstAttribute="trailing" secondItem="4Qa-AB-9T9" secondAttribute="trailing" id="t8n-um-Q27"/>
                     </constraints>
-                </view>
+                </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="mGS-t9-AeB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3Wg-Tx-0G4"/>
-                <constraint firstItem="mGS-t9-AeB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="49D-ba-h01"/>
-                <constraint firstAttribute="bottom" secondItem="mGS-t9-AeB" secondAttribute="bottom" id="UzB-1Q-54C"/>
-                <constraint firstAttribute="trailing" secondItem="mGS-t9-AeB" secondAttribute="trailing" id="dNp-NA-Q5m"/>
-                <constraint firstItem="mGS-t9-AeB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="y6t-5h-97s"/>
+                <constraint firstItem="WUm-4G-AYq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2R9-JO-Wg5"/>
+                <constraint firstItem="WUm-4G-AYq" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Dki-je-MZS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="WUm-4G-AYq" secondAttribute="trailing" id="Oat-Ks-lcN"/>
+                <constraint firstItem="WUm-4G-AYq" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="SYx-8W-exJ"/>
+                <constraint firstItem="4Qa-AB-9T9" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="zAu-5o-XIT"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="84"/>
+            <point key="canvasLocation" x="131.8840579710145" y="83.705357142857139"/>
         </view>
     </objects>
     <resources>
