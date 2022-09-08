@@ -38,7 +38,7 @@ class RegisterViewController: UIViewController {
      
         btnRegistroFormulario.layer.cornerRadius = 5;
         
-        
+        UserDefaults().set(true, forKey: "ViewOnboard")
     }
 
 //    self.navigationController?.pushViewController(LoginViewController(), animated: true)

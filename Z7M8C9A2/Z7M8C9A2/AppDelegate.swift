@@ -17,8 +17,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         window = UIWindow()
-        let mainVC = StartOnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
-        navController = UINavigationController(rootViewController: mainVC)
+        
+        let viewOnboard = UserDefaults().bool(forKey: "ViewOnboard")
+        var mainVC: UIViewController? = nil
+        
+        if viewOnboard {
+            mainVC = RegisterViewController()
+        } else {
+            mainVC =  StartOnboardingViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
+        }
+        
+        navController = UINavigationController(rootViewController: mainVC!)
         window?.rootViewController = navController
         window?.makeKeyAndVisible()
         

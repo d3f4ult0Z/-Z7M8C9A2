@@ -40,6 +40,11 @@
 		A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */; };
 		A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */; };
 		A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DC28C7F317001E291F /* PaginationViewController.swift */; };
+		A9EDE16128CA6EAA004D8EA9 /* GifManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EDE16028CA6EAA004D8EA9 /* GifManager.swift */; };
+		A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16228CA6EC4004D8EA9 /* slide4.gif */; };
+		A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16328CA6EC4004D8EA9 /* slide1.gif */; };
+		A9EDE16828CA6EC4004D8EA9 /* slide3.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16428CA6EC4004D8EA9 /* slide3.gif */; };
+		A9EDE16928CA6EC4004D8EA9 /* slide2.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16528CA6EC4004D8EA9 /* slide2.gif */; };
 		B8DE382328C9261C0044F9D2 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE382228C9261C0044F9D2 /* APIs.swift */; };
 /* End PBXBuildFile section */
 
@@ -156,6 +161,11 @@
 		A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartOnboardingViewController.swift; sourceTree = "<group>"; };
 		A97EF0DC28C7F317001E291F /* PaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewController.swift; sourceTree = "<group>"; };
+		A9EDE16028CA6EAA004D8EA9 /* GifManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GifManager.swift; sourceTree = "<group>"; };
+		A9EDE16228CA6EC4004D8EA9 /* slide4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide4.gif; sourceTree = "<group>"; };
+		A9EDE16328CA6EC4004D8EA9 /* slide1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide1.gif; sourceTree = "<group>"; };
+		A9EDE16428CA6EC4004D8EA9 /* slide3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide3.gif; sourceTree = "<group>"; };
+		A9EDE16528CA6EC4004D8EA9 /* slide2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide2.gif; sourceTree = "<group>"; };
 		B8DE382228C9261C0044F9D2 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		E7E60048122CE16091EF7EBE /* Pods-Z7M8C9A2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.release.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -353,9 +363,30 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		A9EDE16A28CA6EC9004D8EA9 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				A9EDE16328CA6EC4004D8EA9 /* slide1.gif */,
+				A9EDE16528CA6EC4004D8EA9 /* slide2.gif */,
+				A9EDE16428CA6EC4004D8EA9 /* slide3.gif */,
+				A9EDE16228CA6EC4004D8EA9 /* slide4.gif */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		A9EDE16B28CA6EDA004D8EA9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9EDE16028CA6EAA004D8EA9 /* GifManager.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B85772CF28C9249400F9A174 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A9EDE16B28CA6EDA004D8EA9 /* Extensions */,
+				A9EDE16A28CA6EC9004D8EA9 /* Animations */,
 				B8DE382228C9261C0044F9D2 /* APIs.swift */,
 			);
 			path = Utils;
@@ -566,10 +597,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EDE16828CA6EC4004D8EA9 /* slide3.gif in Resources */,
+				A9EDE16928CA6EC4004D8EA9 /* slide2.gif in Resources */,
 				15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */,
 				965588D428C686E8007E6513 /* LaunchScreen.storyboard in Resources */,
 				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
+				A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
+				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
 				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
@@ -670,6 +705,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9EDE16128CA6EAA004D8EA9 /* GifManager.swift in Sources */,
 				A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */,
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,

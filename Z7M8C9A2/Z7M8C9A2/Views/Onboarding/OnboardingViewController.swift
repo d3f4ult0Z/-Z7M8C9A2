@@ -11,13 +11,15 @@ class OnboardingViewController: UIViewController {
     
     let stackView = UIStackView()
     
-    let imageView = UIImageView()
+    var imageView = UIImageView()
     let titleLabel = UILabel()
     let subtitleLabel = UILabel()
     
     init(imageName: String, titleText: String, subtitleText: String) {
         super.init(nibName: nil, bundle: nil)
-        imageView.image = UIImage(named: imageName)
+        //imageView.image = UIImage(named: imageName)
+        let animation = UIImage.gifImageWithName(imageName)
+        imageView = UIImageView(image: animation)
         titleLabel.text = titleText
         subtitleLabel.text = subtitleText
     }
