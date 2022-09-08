@@ -11,7 +11,11 @@ class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.setup()
 
+    }
+    
+    func setup(){
         let primeravista = AcountViewController()
         let segundavista = HomeViewController()
         let terceravista = ConfigurationViewController()
