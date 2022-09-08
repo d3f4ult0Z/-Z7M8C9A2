@@ -31,12 +31,9 @@ class RegisterViewController: UIViewController {
         btnRegistroApple.layer.cornerRadius = 5;
         btnRegistroApple.layer.borderColor = UIColor.black.cgColor
         btnRegistroApple.backgroundColor = .black
-        
-
-        btnRegistroFacebook.layer.cornerRadius = 5;
     
+        btnRegistroFacebook.layer.cornerRadius = 5;
         btnRegistroGoogle.layer.cornerRadius = 5;
-     
         btnRegistroFormulario.layer.cornerRadius = 5;
         
         UserDefaults().set(true, forKey: "ViewOnboard")
