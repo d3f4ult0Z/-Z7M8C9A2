@@ -11,6 +11,13 @@
 		1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81128C7AA5300E16901 /* RegisterViewController.xib */; };
 		1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */; };
 		1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */; };
+		15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9F928CA813900343774 /* TabBarViewController.swift */; };
+		15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9FC28CA817500343774 /* HomeViewController.swift */; };
+		15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2A9FD28CA817500343774 /* HomeViewController.xib */; };
+		15A2AA0228CA823500343774 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2AA0028CA823500343774 /* ConfigurationViewController.swift */; };
+		15A2AA0328CA823500343774 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2AA0128CA823500343774 /* ConfigurationViewController.xib */; };
+		15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2AA0428CA825F00343774 /* AcountViewController.swift */; };
+		15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2AA0528CA825F00343774 /* AcountViewController.xib */; };
 		15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF0C4728C68DF8006B9270 /* LoginViewController.swift */; };
 		15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BF0C4828C68DF8006B9270 /* LoginViewController.xib */; };
 		2BEC3CF5519D7E00264CCDBB /* Pods_Z7M8C9A2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CF719DBA30CA2732F0D51 /* Pods_Z7M8C9A2.framework */; };
@@ -123,6 +130,13 @@
 		1572C81128C7AA5300E16901 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
 		1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterFormViewController.xib; sourceTree = "<group>"; };
+		15A2A9F928CA813900343774 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		15A2A9FC28CA817500343774 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		15A2A9FD28CA817500343774 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		15A2AA0028CA823500343774 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		15A2AA0128CA823500343774 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationViewController.xib; sourceTree = "<group>"; };
+		15A2AA0428CA825F00343774 /* AcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewController.swift; sourceTree = "<group>"; };
+		15A2AA0528CA825F00343774 /* AcountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcountViewController.xib; sourceTree = "<group>"; };
 		15BF0C4728C68DF8006B9270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		15BF0C4828C68DF8006B9270 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		58A224DDB2A2F06D6F4A2D15 /* Pods-Z7M8C9A2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.debug.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.debug.xcconfig"; sourceTree = "<group>"; };
@@ -226,6 +240,28 @@
 				1572C81728C7AA9000E16901 /* RegisterFormViewController.xib */,
 			);
 			path = Register;
+			sourceTree = "<group>";
+		};
+		15A2A9F628CA809500343774 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				15A2A9FB28CA815200343774 /* Controllers */,
+				15A2A9F928CA813900343774 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		15A2A9FB28CA815200343774 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				15A2A9FC28CA817500343774 /* HomeViewController.swift */,
+				15A2A9FD28CA817500343774 /* HomeViewController.xib */,
+				15A2AA0028CA823500343774 /* ConfigurationViewController.swift */,
+				15A2AA0128CA823500343774 /* ConfigurationViewController.xib */,
+				15A2AA0428CA825F00343774 /* AcountViewController.swift */,
+				15A2AA0528CA825F00343774 /* AcountViewController.xib */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		4852DF5380AEE9D05CF8E51A /* Pods */ = {
@@ -343,6 +379,7 @@
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				15A2A9F628CA809500343774 /* TabBar */,
 				A97EF0D928C7F2F3001E291F /* Onboarding */,
 				1572C80F28C7A92900E16901 /* Register */,
 				A96686B128C68B98003B2EF8 /* StartViewController.swift */,
@@ -605,9 +642,12 @@
 				A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
 				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
+				15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
 				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
+				15A2AA0328CA823500343774 /* ConfigurationViewController.xib in Resources */,
+				15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -710,12 +750,16 @@
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
+				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,
 				A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */,
 				B8DE382328C9261C0044F9D2 /* APIs.swift in Sources */,
+				15A2AA0228CA823500343774 /* ConfigurationViewController.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
 				1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */,
 				A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */,
+				15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
+				15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

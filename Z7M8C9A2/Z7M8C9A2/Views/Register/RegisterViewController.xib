@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Z7M8C9A2" customModuleProvider="target">
             <connections>
+                <outlet property="btnEntrarInvitado" destination="zl4-VO-17a" id="IWo-CG-a6w"/>
                 <outlet property="btnRegistroApple" destination="p3E-qf-7eg" id="a6F-9n-V29"/>
                 <outlet property="btnRegistroFacebook" destination="IJa-hw-LqF" id="UNk-Xv-ZQ4"/>
                 <outlet property="btnRegistroFormulario" destination="CFL-mj-etv" id="JoQ-O5-nLc"/>
@@ -109,15 +110,26 @@
                                             <color key="textColor" systemColor="systemMintColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Entrar como invitado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOj-8r-6aq">
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zl4-VO-17a">
                                             <rect key="frame" x="0.0" y="680" width="354" height="100"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="5EX-VN-B3A"/>
+                                                <constraint firstAttribute="height" constant="100" id="hWF-Lu-kbX"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain">
+                                                <attributedString key="attributedTitle">
+                                                    <fragment content="Entrar como invitado">
+                                                        <attributes>
+                                                            <font key="NSFont" size="18" name="Helvetica"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <color key="baseForegroundColor" systemColor="labelColor"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="ActionEntrarInvitado:" destination="-1" eventType="touchUpInside" id="EV3-m4-Zp7"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </stackView>
                             </subviews>
@@ -151,6 +163,9 @@
         </view>
     </objects>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
