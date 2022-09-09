@@ -15,10 +15,16 @@ class ConfigurationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableViewSetup()
-        
+        self.navigationController?.isNavigationBarHidden = true
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
     func tableViewSetup() {
+        
         
         ProfileTableViewCell.register(tableView: self.tableView)
         EditUserDataTableViewCell.register(tableView: self.tableView)
@@ -82,4 +88,30 @@ extension ConfigurationViewController:  UITableViewDataSource, UITableViewDelega
             return UITableViewCell()
         }
     }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+            switch (indexPath.section, indexPath.row) {
+            
+            case (1, 0):
+                self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
+                
+            case (1, 1):
+                self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
+                
+            case (1, 2):
+                self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
+                
+            case (1, 3):
+                self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
+        
+            default:
+                return
+            
+        }
+    }
+    
+    
+    
 }

@@ -57,6 +57,8 @@
 		A9005B7D28CBA9E700F04257 /* PrivacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7B28CBA9E700F04257 /* PrivacyTableViewCell.xib */; };
 		A9005B8028CBAA4C00F04257 /* LogOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7E28CBAA4C00F04257 /* LogOutTableViewCell.swift */; };
 		A9005B8128CBAA4C00F04257 /* LogOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7F28CBAA4C00F04257 /* LogOutTableViewCell.xib */; };
+		A9005B8428CBB49C00F04257 /* EditUserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B8228CBB49C00F04257 /* EditUserDataViewController.swift */; };
+		A9005B8528CBB49C00F04257 /* EditUserDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B8328CBB49C00F04257 /* EditUserDataViewController.xib */; };
 		A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96686B128C68B98003B2EF8 /* StartViewController.swift */; };
 		A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96686B228C68B98003B2EF8 /* StartViewController.xib */; };
 		A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */; };
@@ -200,6 +202,8 @@
 		A9005B7B28CBA9E700F04257 /* PrivacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyTableViewCell.xib; sourceTree = "<group>"; };
 		A9005B7E28CBAA4C00F04257 /* LogOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableViewCell.swift; sourceTree = "<group>"; };
 		A9005B7F28CBAA4C00F04257 /* LogOutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutTableViewCell.xib; sourceTree = "<group>"; };
+		A9005B8228CBB49C00F04257 /* EditUserDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserDataViewController.swift; sourceTree = "<group>"; };
+		A9005B8328CBB49C00F04257 /* EditUserDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditUserDataViewController.xib; sourceTree = "<group>"; };
 		A96686B128C68B98003B2EF8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A96686B228C68B98003B2EF8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -412,6 +416,8 @@
 				A9005B6928CB9A7E00F04257 /* Cells */,
 				A9005B6528CB97DB00F04257 /* ConfigurationViewController.swift */,
 				A9005B6628CB97DB00F04257 /* ConfigurationViewController.xib */,
+				A9005B8228CBB49C00F04257 /* EditUserDataViewController.swift */,
+				A9005B8328CBB49C00F04257 /* EditUserDataViewController.xib */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -695,6 +701,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9005B8528CBB49C00F04257 /* EditUserDataViewController.xib in Resources */,
 				A9EDE16828CA6EC4004D8EA9 /* slide3.gif in Resources */,
 				A9005B8128CBAA4C00F04257 /* LogOutTableViewCell.xib in Resources */,
 				A9EDE16928CA6EC4004D8EA9 /* slide2.gif in Resources */,
@@ -828,6 +835,7 @@
 				A9005B6F28CB9D5300F04257 /* RegisterProtocol.swift in Sources */,
 				A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */,
 				A9005B8028CBAA4C00F04257 /* LogOutTableViewCell.swift in Sources */,
+				A9005B8428CBB49C00F04257 /* EditUserDataViewController.swift in Sources */,
 				A9005B7428CBA66000F04257 /* EditUserDataTableViewCell.swift in Sources */,
 				15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
