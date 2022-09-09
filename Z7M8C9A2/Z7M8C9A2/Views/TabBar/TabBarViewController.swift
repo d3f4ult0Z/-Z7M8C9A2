@@ -45,8 +45,8 @@ class TabBarViewController: UITabBarController {
         }
         
         
-        self.tabBar.backgroundColor = .white
-        self.tabBar.tintColor = .black
+        self.tabBar.backgroundColor = UIColor.systemBackground
+        self.tabBar.tintColor = UIColor.systemBlue
     }
     
 
