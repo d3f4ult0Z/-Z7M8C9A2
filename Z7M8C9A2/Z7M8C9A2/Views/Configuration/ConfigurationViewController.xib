@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConfigurationViewController" customModule="Z7M8C9A2" customModuleProvider="target">
             <connections>
+                <outlet property="tableView" destination="3vw-Yi-HaG" id="spi-ee-b4H"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,26 +19,19 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="caK-c2-Jo2">
-                    <rect key="frame" x="50" y="438" width="314" height="20.5"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Estas en configuración" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ6-PT-dva">
-                            <rect key="frame" x="0.0" y="0.0" width="314" height="20.5"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                </stackView>
+                <tableView clipsSubviews="YES" contentMode="redraw" alwaysBounceVertical="YES" style="insetGrouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-Yi-HaG" customClass="YorchTableView" customModule="Z7M8C9A2" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="caK-c2-Jo2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="50" id="aUK-pb-1YJ"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="caK-c2-Jo2" secondAttribute="trailing" constant="50" id="dyL-7w-YjZ"/>
-                <constraint firstItem="caK-c2-Jo2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="m47-hj-iUh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="3vw-Yi-HaG" secondAttribute="trailing" id="2PG-PO-FLg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="3vw-Yi-HaG" secondAttribute="bottom" id="5XO-0Z-8Jh"/>
+                <constraint firstItem="3vw-Yi-HaG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="FIY-qK-juV"/>
+                <constraint firstItem="3vw-Yi-HaG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cbA-gj-9HF"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="126"/>
+            <point key="canvasLocation" x="139" y="102"/>
         </view>
     </objects>
     <resources>

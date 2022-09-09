@@ -16,6 +16,7 @@ class TabBarViewController: UITabBarController {
     }
     
     func setup(){
+        
         let primeravista = HomeViewController()
         let segundavista = AbstractViewController()
         let terceravista = AcountViewController()

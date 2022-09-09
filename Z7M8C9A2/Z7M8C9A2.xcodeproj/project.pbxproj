@@ -14,8 +14,6 @@
 		15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9F928CA813900343774 /* TabBarViewController.swift */; };
 		15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9FC28CA817500343774 /* HomeViewController.swift */; };
 		15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2A9FD28CA817500343774 /* HomeViewController.xib */; };
-		15A2AA0228CA823500343774 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2AA0028CA823500343774 /* ConfigurationViewController.swift */; };
-		15A2AA0328CA823500343774 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2AA0128CA823500343774 /* ConfigurationViewController.xib */; };
 		15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2AA0428CA825F00343774 /* AcountViewController.swift */; };
 		15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2AA0528CA825F00343774 /* AcountViewController.xib */; };
 		15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF0C4728C68DF8006B9270 /* LoginViewController.swift */; };
@@ -44,6 +42,21 @@
 		9655891628C686E9007E6513 /* Z7M8C9A2_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655891528C686E9007E6513 /* Z7M8C9A2_WatchKit_AppTests.swift */; };
 		9655892028C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655891F28C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift */; };
 		9655892228C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */; };
+		A9005B6328CB971E00F04257 /* YorchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B6228CB971E00F04257 /* YorchTableView.swift */; };
+		A9005B6728CB97DB00F04257 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B6528CB97DB00F04257 /* ConfigurationViewController.swift */; };
+		A9005B6828CB97DB00F04257 /* ConfigurationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B6628CB97DB00F04257 /* ConfigurationViewController.xib */; };
+		A9005B6C28CB9A9600F04257 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B6A28CB9A9600F04257 /* ProfileTableViewCell.swift */; };
+		A9005B6D28CB9A9600F04257 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B6B28CB9A9600F04257 /* ProfileTableViewCell.xib */; };
+		A9005B6F28CB9D5300F04257 /* RegisterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B6E28CB9D5300F04257 /* RegisterProtocol.swift */; };
+		A9005B7128CB9D7700F04257 /* ConfigurarCeldaProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7028CB9D7700F04257 /* ConfigurarCeldaProtocol.swift */; };
+		A9005B7428CBA66000F04257 /* EditUserDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7228CBA66000F04257 /* EditUserDataTableViewCell.swift */; };
+		A9005B7528CBA66000F04257 /* EditUserDataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7328CBA66000F04257 /* EditUserDataTableViewCell.xib */; };
+		A9005B7828CBA98600F04257 /* LocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7628CBA98500F04257 /* LocationTableViewCell.swift */; };
+		A9005B7928CBA98600F04257 /* LocationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7728CBA98600F04257 /* LocationTableViewCell.xib */; };
+		A9005B7C28CBA9E700F04257 /* PrivacyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7A28CBA9E700F04257 /* PrivacyTableViewCell.swift */; };
+		A9005B7D28CBA9E700F04257 /* PrivacyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7B28CBA9E700F04257 /* PrivacyTableViewCell.xib */; };
+		A9005B8028CBAA4C00F04257 /* LogOutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9005B7E28CBAA4C00F04257 /* LogOutTableViewCell.swift */; };
+		A9005B8128CBAA4C00F04257 /* LogOutTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B7F28CBAA4C00F04257 /* LogOutTableViewCell.xib */; };
 		A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96686B128C68B98003B2EF8 /* StartViewController.swift */; };
 		A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96686B228C68B98003B2EF8 /* StartViewController.xib */; };
 		A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */; };
@@ -135,8 +148,6 @@
 		15A2A9F928CA813900343774 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		15A2A9FC28CA817500343774 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		15A2A9FD28CA817500343774 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		15A2AA0028CA823500343774 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
-		15A2AA0128CA823500343774 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationViewController.xib; sourceTree = "<group>"; };
 		15A2AA0428CA825F00343774 /* AcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewController.swift; sourceTree = "<group>"; };
 		15A2AA0528CA825F00343774 /* AcountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcountViewController.xib; sourceTree = "<group>"; };
 		15BF0C4728C68DF8006B9270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -174,6 +185,21 @@
 		9655891F28C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z7M8C9A2_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		9655892128C686E9007E6513 /* Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Z7M8C9A2_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		9F6CF719DBA30CA2732F0D51 /* Pods_Z7M8C9A2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Z7M8C9A2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9005B6228CB971E00F04257 /* YorchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YorchTableView.swift; sourceTree = "<group>"; };
+		A9005B6528CB97DB00F04257 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		A9005B6628CB97DB00F04257 /* ConfigurationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfigurationViewController.xib; sourceTree = "<group>"; };
+		A9005B6A28CB9A9600F04257 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		A9005B6B28CB9A9600F04257 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
+		A9005B6E28CB9D5300F04257 /* RegisterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocol.swift; sourceTree = "<group>"; };
+		A9005B7028CB9D7700F04257 /* ConfigurarCeldaProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurarCeldaProtocol.swift; sourceTree = "<group>"; };
+		A9005B7228CBA66000F04257 /* EditUserDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditUserDataTableViewCell.swift; sourceTree = "<group>"; };
+		A9005B7328CBA66000F04257 /* EditUserDataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditUserDataTableViewCell.xib; sourceTree = "<group>"; };
+		A9005B7628CBA98500F04257 /* LocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTableViewCell.swift; sourceTree = "<group>"; };
+		A9005B7728CBA98600F04257 /* LocationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationTableViewCell.xib; sourceTree = "<group>"; };
+		A9005B7A28CBA9E700F04257 /* PrivacyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyTableViewCell.swift; sourceTree = "<group>"; };
+		A9005B7B28CBA9E700F04257 /* PrivacyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PrivacyTableViewCell.xib; sourceTree = "<group>"; };
+		A9005B7E28CBAA4C00F04257 /* LogOutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOutTableViewCell.swift; sourceTree = "<group>"; };
+		A9005B7F28CBAA4C00F04257 /* LogOutTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogOutTableViewCell.xib; sourceTree = "<group>"; };
 		A96686B128C68B98003B2EF8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A96686B228C68B98003B2EF8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -260,8 +286,6 @@
 			children = (
 				15A2A9FC28CA817500343774 /* HomeViewController.swift */,
 				15A2A9FD28CA817500343774 /* HomeViewController.xib */,
-				15A2AA0028CA823500343774 /* ConfigurationViewController.swift */,
-				15A2AA0128CA823500343774 /* ConfigurationViewController.xib */,
 				15A2AA0428CA825F00343774 /* AcountViewController.swift */,
 				15A2AA0528CA825F00343774 /* AcountViewController.xib */,
 				15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */,
@@ -382,9 +406,37 @@
 			path = "Z7M8C9A2 WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		A9005B6428CB97B900F04257 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				A9005B6928CB9A7E00F04257 /* Cells */,
+				A9005B6528CB97DB00F04257 /* ConfigurationViewController.swift */,
+				A9005B6628CB97DB00F04257 /* ConfigurationViewController.xib */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		A9005B6928CB9A7E00F04257 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A9005B6A28CB9A9600F04257 /* ProfileTableViewCell.swift */,
+				A9005B6B28CB9A9600F04257 /* ProfileTableViewCell.xib */,
+				A9005B7228CBA66000F04257 /* EditUserDataTableViewCell.swift */,
+				A9005B7328CBA66000F04257 /* EditUserDataTableViewCell.xib */,
+				A9005B7628CBA98500F04257 /* LocationTableViewCell.swift */,
+				A9005B7728CBA98600F04257 /* LocationTableViewCell.xib */,
+				A9005B7A28CBA9E700F04257 /* PrivacyTableViewCell.swift */,
+				A9005B7B28CBA9E700F04257 /* PrivacyTableViewCell.xib */,
+				A9005B7E28CBAA4C00F04257 /* LogOutTableViewCell.swift */,
+				A9005B7F28CBAA4C00F04257 /* LogOutTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A9005B6428CB97B900F04257 /* Configuration */,
 				15A2A9F628CA809500343774 /* TabBar */,
 				A97EF0D928C7F2F3001E291F /* Onboarding */,
 				1572C80F28C7A92900E16901 /* Register */,
@@ -421,6 +473,9 @@
 			isa = PBXGroup;
 			children = (
 				A9EDE16028CA6EAA004D8EA9 /* GifManager.swift */,
+				A9005B6228CB971E00F04257 /* YorchTableView.swift */,
+				A9005B6E28CB9D5300F04257 /* RegisterProtocol.swift */,
+				A9005B7028CB9D7700F04257 /* ConfigurarCeldaProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -641,19 +696,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EDE16828CA6EC4004D8EA9 /* slide3.gif in Resources */,
+				A9005B8128CBAA4C00F04257 /* LogOutTableViewCell.xib in Resources */,
 				A9EDE16928CA6EC4004D8EA9 /* slide2.gif in Resources */,
+				A9005B7928CBA98600F04257 /* LocationTableViewCell.xib in Resources */,
 				15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */,
+				A9005B7D28CBA9E700F04257 /* PrivacyTableViewCell.xib in Resources */,
 				965588D428C686E8007E6513 /* LaunchScreen.storyboard in Resources */,
+				A9005B7528CBA66000F04257 /* EditUserDataTableViewCell.xib in Resources */,
 				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
 				A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */,
 				15F58CE428CB8C3200ECA1D2 /* AbstractViewController.xib in Resources */,
+				A9005B6828CB97DB00F04257 /* ConfigurationViewController.xib in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
 				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
 				15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
+				A9005B6D28CB9A9600F04257 /* ProfileTableViewCell.xib in Resources */,
 				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
-				15A2AA0328CA823500343774 /* ConfigurationViewController.xib in Resources */,
 				15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,16 +818,24 @@
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
 				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,
+				A9005B7C28CBA9E700F04257 /* PrivacyTableViewCell.swift in Sources */,
 				A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */,
+				A9005B6C28CB9A9600F04257 /* ProfileTableViewCell.swift in Sources */,
 				B8DE382328C9261C0044F9D2 /* APIs.swift in Sources */,
-				15A2AA0228CA823500343774 /* ConfigurationViewController.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
 				1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */,
+				A9005B6328CB971E00F04257 /* YorchTableView.swift in Sources */,
+				A9005B6F28CB9D5300F04257 /* RegisterProtocol.swift in Sources */,
 				A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */,
+				A9005B8028CBAA4C00F04257 /* LogOutTableViewCell.swift in Sources */,
+				A9005B7428CBA66000F04257 /* EditUserDataTableViewCell.swift in Sources */,
 				15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
 				15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */,
+				A9005B6728CB97DB00F04257 /* ConfigurationViewController.swift in Sources */,
+				A9005B7828CBA98600F04257 /* LocationTableViewCell.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
+				A9005B7128CB9D7700F04257 /* ConfigurarCeldaProtocol.swift in Sources */,
 				15F58CE328CB8C3200ECA1D2 /* AbstractViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
