@@ -16,21 +16,25 @@ class TabBarViewController: UITabBarController {
     }
     
     func setup(){
-        let primeravista = AcountViewController()
-        let segundavista = HomeViewController()
-        let terceravista = ConfigurationViewController()
+        let primeravista = HomeViewController()
+        let segundavista = AbstractViewController()
+        let terceravista = AcountViewController()
+        let cuartavista = ConfigurationViewController()
         
-        primeravista.title = "Cuentas"
-        segundavista.title = "Home"
+        primeravista.title = "Home"
+        segundavista.title = "Resumen"
         terceravista.title = "Configuración"
+        cuartavista.title = "Cuentas"
         
-        self.setViewControllers([primeravista, segundavista, terceravista], animated: false)
+        
+        
+        self.setViewControllers([primeravista, segundavista, terceravista, cuartavista], animated: false)
         
         guard let items = self.tabBar.items else { return }
         
-        let images = [ "person.fill", "house", "gearshape.fill"]
+        let images = [ "house", "doc.plaintext.fill", "gearshape.fill", "person.fill" ]
         
-        for x in 0...2{
+        for x in 0...3{
             items[x].image = UIImage(systemName: images[x])
         }
         
