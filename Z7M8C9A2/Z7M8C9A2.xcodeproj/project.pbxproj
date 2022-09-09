@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1527625928CBB93D00AEF24D /* AcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527625728CBB93D00AEF24D /* AcountViewController.swift */; };
+		1527625A28CBB93D00AEF24D /* AcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1527625828CBB93D00AEF24D /* AcountViewController.xib */; };
+		1527625E28CBB98000AEF24D /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527625C28CBB98000AEF24D /* DataTableViewCell.swift */; };
+		1527625F28CBB98000AEF24D /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1527625D28CBB98000AEF24D /* DataTableViewCell.xib */; };
 		1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81028C7AA5300E16901 /* RegisterViewController.swift */; };
 		1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81128C7AA5300E16901 /* RegisterViewController.xib */; };
 		1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */; };
@@ -14,8 +18,6 @@
 		15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9F928CA813900343774 /* TabBarViewController.swift */; };
 		15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2A9FC28CA817500343774 /* HomeViewController.swift */; };
 		15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2A9FD28CA817500343774 /* HomeViewController.xib */; };
-		15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A2AA0428CA825F00343774 /* AcountViewController.swift */; };
-		15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15A2AA0528CA825F00343774 /* AcountViewController.xib */; };
 		15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF0C4728C68DF8006B9270 /* LoginViewController.swift */; };
 		15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15BF0C4828C68DF8006B9270 /* LoginViewController.xib */; };
 		15F58CE328CB8C3200ECA1D2 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */; };
@@ -143,6 +145,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1527625728CBB93D00AEF24D /* AcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewController.swift; sourceTree = "<group>"; };
+		1527625828CBB93D00AEF24D /* AcountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcountViewController.xib; sourceTree = "<group>"; };
+		1527625C28CBB98000AEF24D /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
+		1527625D28CBB98000AEF24D /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
 		1572C81028C7AA5300E16901 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1572C81128C7AA5300E16901 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
@@ -150,8 +156,6 @@
 		15A2A9F928CA813900343774 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		15A2A9FC28CA817500343774 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		15A2A9FD28CA817500343774 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
-		15A2AA0428CA825F00343774 /* AcountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcountViewController.swift; sourceTree = "<group>"; };
-		15A2AA0528CA825F00343774 /* AcountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcountViewController.xib; sourceTree = "<group>"; };
 		15BF0C4728C68DF8006B9270 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		15BF0C4828C68DF8006B9270 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
@@ -265,6 +269,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1527625628CBB90600AEF24D /* Acounts */ = {
+			isa = PBXGroup;
+			children = (
+				1527625B28CBB94A00AEF24D /* Cells */,
+				1527625728CBB93D00AEF24D /* AcountViewController.swift */,
+				1527625828CBB93D00AEF24D /* AcountViewController.xib */,
+			);
+			path = Acounts;
+			sourceTree = "<group>";
+		};
+		1527625B28CBB94A00AEF24D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1527625C28CBB98000AEF24D /* DataTableViewCell.swift */,
+				1527625D28CBB98000AEF24D /* DataTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		1572C80F28C7A92900E16901 /* Register */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,8 +313,6 @@
 			children = (
 				15A2A9FC28CA817500343774 /* HomeViewController.swift */,
 				15A2A9FD28CA817500343774 /* HomeViewController.xib */,
-				15A2AA0428CA825F00343774 /* AcountViewController.swift */,
-				15A2AA0528CA825F00343774 /* AcountViewController.xib */,
 				15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */,
 				15F58CE228CB8C3200ECA1D2 /* AbstractViewController.xib */,
 			);
@@ -442,6 +463,7 @@
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1527625628CBB90600AEF24D /* Acounts */,
 				A9005B6428CB97B900F04257 /* Configuration */,
 				15A2A9F628CA809500343774 /* TabBar */,
 				A97EF0D928C7F2F3001E291F /* Onboarding */,
@@ -709,14 +731,15 @@
 				15BF0C4A28C68DF8006B9270 /* LoginViewController.xib in Resources */,
 				A9005B7D28CBA9E700F04257 /* PrivacyTableViewCell.xib in Resources */,
 				965588D428C686E8007E6513 /* LaunchScreen.storyboard in Resources */,
+				1527625A28CBB93D00AEF24D /* AcountViewController.xib in Resources */,
 				A9005B7528CBA66000F04257 /* EditUserDataTableViewCell.xib in Resources */,
 				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
 				A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */,
 				15F58CE428CB8C3200ECA1D2 /* AbstractViewController.xib in Resources */,
+				1527625F28CBB98000AEF24D /* DataTableViewCell.xib in Resources */,
 				A9005B6828CB97DB00F04257 /* ConfigurationViewController.xib in Resources */,
 				965588D128C686E8007E6513 /* Assets.xcassets in Resources */,
 				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
-				15A2AA0728CA825F00343774 /* AcountViewController.xib in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
 				A9005B6D28CB9A9600F04257 /* ProfileTableViewCell.xib in Resources */,
@@ -827,6 +850,7 @@
 				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,
 				A9005B7C28CBA9E700F04257 /* PrivacyTableViewCell.swift in Sources */,
 				A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */,
+				1527625928CBB93D00AEF24D /* AcountViewController.swift in Sources */,
 				A9005B6C28CB9A9600F04257 /* ProfileTableViewCell.swift in Sources */,
 				B8DE382328C9261C0044F9D2 /* APIs.swift in Sources */,
 				965588C828C686E6007E6513 /* AppDelegate.swift in Sources */,
@@ -839,8 +863,8 @@
 				A9005B7428CBA66000F04257 /* EditUserDataTableViewCell.swift in Sources */,
 				15A2A9FA28CA813900343774 /* TabBarViewController.swift in Sources */,
 				15BF0C4928C68DF8006B9270 /* LoginViewController.swift in Sources */,
-				15A2AA0628CA825F00343774 /* AcountViewController.swift in Sources */,
 				A9005B6728CB97DB00F04257 /* ConfigurationViewController.swift in Sources */,
+				1527625E28CBB98000AEF24D /* DataTableViewCell.swift in Sources */,
 				A9005B7828CBA98600F04257 /* LocationTableViewCell.swift in Sources */,
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 				A9005B7128CB9D7700F04257 /* ConfigurarCeldaProtocol.swift in Sources */,
