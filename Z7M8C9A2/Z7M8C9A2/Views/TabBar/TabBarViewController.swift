@@ -23,8 +23,8 @@ class TabBarViewController: UITabBarController {
         
         primeravista.title = "Home"
         segundavista.title = "Resumen"
-        terceravista.title = "Configuración"
-        cuartavista.title = "Cuentas"
+        terceravista.title = "Cuentas"
+        cuartavista.title = "Configuración"
         
         
         
@@ -32,7 +32,7 @@ class TabBarViewController: UITabBarController {
         
         guard let items = self.tabBar.items else { return }
         
-        let images = [ "house", "doc.plaintext.fill", "gearshape.fill", "person.fill" ]
+        let images = [ "house","doc.plaintext.fill","person.fill", "gearshape.fill" ]
         
         for x in 0...3{
             items[x].image = UIImage(systemName: images[x])
