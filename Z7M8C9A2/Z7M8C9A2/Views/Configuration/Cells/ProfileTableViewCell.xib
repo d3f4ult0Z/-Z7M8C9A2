@@ -17,18 +17,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2bN-u6-IGs">
-                        <rect key="frame" x="20" y="10" width="441" height="20"/>
+                        <rect key="frame" x="20" y="10" width="441" height="43"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="dLf-VE-fsq">
-                                <rect key="frame" x="0.0" y="0.5" width="100" height="19"/>
+                                <rect key="frame" x="0.0" y="0.5" width="100" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="d69-9d-hH5"/>
                                     <constraint firstAttribute="width" constant="100" id="vcT-b3-Shq"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jose Maria Ramon Villa Lopez de Llergo" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9P-Ij-HJO">
-                                <rect key="frame" x="120" y="0.0" width="321" height="20"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <rect key="frame" x="120" y="0.0" width="321" height="43"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

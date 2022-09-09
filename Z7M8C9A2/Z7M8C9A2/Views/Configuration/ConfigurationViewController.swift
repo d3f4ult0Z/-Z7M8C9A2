@@ -104,7 +104,7 @@ extension ConfigurationViewController:  UITableViewDataSource, UITableViewDelega
                 self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
                 
             case (1, 3):
-                self.navigationController?.pushViewController(EditUserDataViewController(), animated: true)
+                self.navigationController?.popToRootViewController(animated: true)
         
             default:
                 return
