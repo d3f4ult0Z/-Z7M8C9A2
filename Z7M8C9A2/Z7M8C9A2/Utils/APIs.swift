@@ -10,7 +10,7 @@ import Alamofire
 import UIKit
 import CoreLocation
 
-enum API{
+enum API {
     
     static var enviroment:Enviroment = .prd
     // MARK: - Ambiente
@@ -20,17 +20,18 @@ enum API{
     }
     // MARK: - URL Base
     static var urlBase:String {
-        switch API.enviroment{
+        switch API.enviroment {
         case .prd:
-            return "https://petco-svs.wallia.dev"
+            return "https://api.latitudmegalopolis.com/functions/test.php?keycode"
         case .dev:
-            return "https://petco-svs-qa.wallia.dev"
+            return "https://api.latitudmegalopolis.com/functions/test.php?keycode"
         }
     }
     
     
     // MARK: - Servicios de Z7M8C9A2
     case test
+    case login(user:String, pass:String)
 }
 
 // MARK: - Metodos
@@ -44,6 +45,9 @@ extension API{
     // MARK: - Parametros
     var params:[String:String]?{
         switch self {
+        case .login(let user, let pass):
+            return ["phone":user, "pass":pass]
+        
         default:
             return nil
         }
@@ -55,13 +59,17 @@ extension API{
         switch self {
         case .test:
             return ""
+        
+        case .login:
+            return "\(API.urlBase)=LOGINPOST"
+            
         }
     }
     // MARK: - Headers
     var headers:HTTPHeaders{
         switch self {
         default:
-            return [HTTPHeader(name: "Content-Type", value: "application/json")]
+            return [HTTPHeader(name: "Content-Type", value: "application/x-www-form-urlencoded")]
         }
     }
 }
@@ -79,7 +87,7 @@ extension API{
         debugPrint("Modelo------->\(model)")
         debugPrint("Cabeceras---->\(headers)")
         debugPrint("--------------------------------------------------------")
-        AF.request(urlComplement, method: method, parameters: params, encoder: JSONParameterEncoder.default, headers: headers).responseData{ response in
+        AF.request(urlComplement, method: method, parameters: params, encoder: URLEncodedFormParameterEncoder.default, headers: headers).responseData{ response in
             let decoder = JSONDecoder()
             if let data = response.data{
                 do{

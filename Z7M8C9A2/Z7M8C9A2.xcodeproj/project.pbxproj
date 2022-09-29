@@ -63,6 +63,8 @@
 		A9005B8528CBB49C00F04257 /* EditUserDataViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9005B8328CBB49C00F04257 /* EditUserDataViewController.xib */; };
 		A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A96686B128C68B98003B2EF8 /* StartViewController.swift */; };
 		A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A96686B228C68B98003B2EF8 /* StartViewController.xib */; };
+		A97E2C3B28E5FD5E009651AE /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97E2C3A28E5FD5E009651AE /* LoginResponse.swift */; };
+		A97E2C3F28E600B4009651AE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97E2C3E28E600B4009651AE /* BaseViewController.swift */; };
 		A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */; };
 		A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */; };
 		A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EF0DC28C7F317001E291F /* PaginationViewController.swift */; };
@@ -210,6 +212,8 @@
 		A9005B8328CBB49C00F04257 /* EditUserDataViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditUserDataViewController.xib; sourceTree = "<group>"; };
 		A96686B128C68B98003B2EF8 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		A96686B228C68B98003B2EF8 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		A97E2C3A28E5FD5E009651AE /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		A97E2C3E28E600B4009651AE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		A97EF0DA28C7F317001E291F /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A97EF0DB28C7F317001E291F /* StartOnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartOnboardingViewController.swift; sourceTree = "<group>"; };
 		A97EF0DC28C7F317001E291F /* PaginationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationViewController.swift; sourceTree = "<group>"; };
@@ -476,6 +480,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		A97E2C3928E5FD4A009651AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A97E2C3A28E5FD5E009651AE /* LoginResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A97EF0D928C7F2F3001E291F /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -511,9 +523,11 @@
 		B85772CF28C9249400F9A174 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A97E2C3928E5FD4A009651AE /* Models */,
 				A9EDE16B28CA6EDA004D8EA9 /* Extensions */,
 				A9EDE16A28CA6EC9004D8EA9 /* Animations */,
 				B8DE382228C9261C0044F9D2 /* APIs.swift */,
+				A97E2C3E28E600B4009651AE /* BaseViewController.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -848,6 +862,7 @@
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
 				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,
+				A97E2C3B28E5FD5E009651AE /* LoginResponse.swift in Sources */,
 				A9005B7C28CBA9E700F04257 /* PrivacyTableViewCell.swift in Sources */,
 				A97EF0DD28C7F317001E291F /* OnboardingViewController.swift in Sources */,
 				1527625928CBB93D00AEF24D /* AcountViewController.swift in Sources */,
@@ -869,6 +884,7 @@
 				965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */,
 				A9005B7128CB9D7700F04257 /* ConfigurarCeldaProtocol.swift in Sources */,
 				15F58CE328CB8C3200ECA1D2 /* AbstractViewController.swift in Sources */,
+				A97E2C3F28E600B4009651AE /* BaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

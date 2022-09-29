@@ -50,4 +50,9 @@ class RegisterViewController: UIViewController {
         self.navigationController?.pushViewController(RegisterFormViewController(), animated: true)
     }
     
+    
+    @IBAction func actionIrLogin(_ sender: Any) {
+        self.navigationController?.pushViewController(LoginViewController(), animated: true)
+    }
+    
 }
