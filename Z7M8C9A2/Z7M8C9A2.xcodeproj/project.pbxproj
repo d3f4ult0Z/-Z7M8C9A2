@@ -11,6 +11,7 @@
 		1527625A28CBB93D00AEF24D /* AcountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1527625828CBB93D00AEF24D /* AcountViewController.xib */; };
 		1527625E28CBB98000AEF24D /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527625C28CBB98000AEF24D /* DataTableViewCell.swift */; };
 		1527625F28CBB98000AEF24D /* DataTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1527625D28CBB98000AEF24D /* DataTableViewCell.xib */; };
+		152A217528E615D5007429C1 /* RegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152A217428E615D5007429C1 /* RegisterResponse.swift */; };
 		1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81028C7AA5300E16901 /* RegisterViewController.swift */; };
 		1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1572C81128C7AA5300E16901 /* RegisterViewController.xib */; };
 		1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */; };
@@ -151,6 +152,7 @@
 		1527625828CBB93D00AEF24D /* AcountViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AcountViewController.xib; sourceTree = "<group>"; };
 		1527625C28CBB98000AEF24D /* DataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTableViewCell.swift; sourceTree = "<group>"; };
 		1527625D28CBB98000AEF24D /* DataTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DataTableViewCell.xib; sourceTree = "<group>"; };
+		152A217428E615D5007429C1 /* RegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterResponse.swift; sourceTree = "<group>"; };
 		1572C81028C7AA5300E16901 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		1572C81128C7AA5300E16901 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
 		1572C81628C7AA9000E16901 /* RegisterFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterFormViewController.swift; sourceTree = "<group>"; };
@@ -484,6 +486,7 @@
 			isa = PBXGroup;
 			children = (
 				A97E2C3A28E5FD5E009651AE /* LoginResponse.swift */,
+				152A217428E615D5007429C1 /* RegisterResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -859,6 +862,7 @@
 				A9EDE16128CA6EAA004D8EA9 /* GifManager.swift in Sources */,
 				A97EF0E928C7F317001E291F /* PaginationViewController.swift in Sources */,
 				965588CC28C686E6007E6513 /* ViewController.swift in Sources */,
+				152A217528E615D5007429C1 /* RegisterResponse.swift in Sources */,
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
 				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,

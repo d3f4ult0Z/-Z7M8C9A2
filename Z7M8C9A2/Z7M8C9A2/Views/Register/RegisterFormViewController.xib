@@ -10,6 +10,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterFormViewController" customModule="Z7M8C9A2" customModuleProvider="target">
             <connections>
+                <outlet property="TextFieldNumero" destination="tjq-cZ-GdX" id="gdg-5I-sts"/>
+                <outlet property="btnRegistrar" destination="8fj-aB-k3j" id="UeQ-OD-exA"/>
+                <outlet property="lblMail" destination="eZ9-xz-xJA" id="EM6-dt-eSk"/>
+                <outlet property="lblNombreCompleto" destination="YK1-6a-nMd" id="dir-MU-p0I"/>
+                <outlet property="lblUsuario" destination="EcP-kA-pSS" id="93W-Z9-7xv"/>
+                <outlet property="textFieldContraseña" destination="qTZ-Wl-y6Y" id="hMQ-m1-edV"/>
+                <outlet property="textFieldRepetirContraseña" destination="moC-qi-Kke" id="DjI-eu-vRu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -36,7 +43,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcP-kA-pSS">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Usuario" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EcP-kA-pSS">
                                             <rect key="frame" x="0.0" y="130" width="354" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="w28-UX-pVw"/>
@@ -44,7 +51,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido paterno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-xz-xJA">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eZ9-xz-xJA">
                                             <rect key="frame" x="0.0" y="195" width="354" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="xdl-BK-JoO"/>
@@ -52,7 +59,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apellido materno" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YK1-6a-nMd">
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre completo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YK1-6a-nMd">
                                             <rect key="frame" x="0.0" y="260" width="354" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="DCa-Xp-MCF"/>
@@ -60,7 +67,7 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <textInputTraits key="textInputTraits"/>
                                         </textField>
-                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjq-cZ-GdX">
+                                        <textField opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tjq-cZ-GdX">
                                             <rect key="frame" x="0.0" y="325" width="354" height="35"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="35" id="TxA-yB-fDl"/>
@@ -74,7 +81,7 @@
                                                 <constraint firstAttribute="height" constant="35" id="2QQ-ZY-85T"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="password"/>
                                         </textField>
                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repetir contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="moC-qi-Kke">
                                             <rect key="frame" x="0.0" y="455" width="354" height="35"/>
@@ -82,7 +89,7 @@
                                                 <constraint firstAttribute="height" constant="35" id="b8c-Mw-yUC"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
+                                            <textInputTraits key="textInputTraits" textContentType="password"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fj-aB-k3j">
                                             <rect key="frame" x="0.0" y="520" width="354" height="40"/>
@@ -92,6 +99,9 @@
                                             </constraints>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Registrarse"/>
+                                            <connections>
+                                                <action selector="actionBtnRegistrar:" destination="-1" eventType="touchUpInside" id="wWr-Vw-qzW"/>
+                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terminos y condiciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yQ3-IZ-MAB">
                                             <rect key="frame" x="0.0" y="590" width="354" height="276"/>

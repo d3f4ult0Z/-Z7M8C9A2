@@ -32,6 +32,7 @@ enum API {
     // MARK: - Servicios de Z7M8C9A2
     case test
     case login(user:String, pass:String)
+    case register(user: String, mail: String, name: String, phone: String, pass: String)
 }
 
 // MARK: - Metodos
@@ -47,6 +48,8 @@ extension API{
         switch self {
         case .login(let user, let pass):
             return ["phone":user, "pass":pass]
+        case .register(let user, let mail, let name, let phone, let pass):
+            return ["user": user, "mail": mail, "name": name, "phone": phone, "pass": pass]
         
         default:
             return nil
@@ -62,6 +65,8 @@ extension API{
         
         case .login:
             return "\(API.urlBase)=LOGINPOST"
+        case .register:
+            return "\(API.urlBase)=NEWUSERPOST"
             
         }
     }
