@@ -74,6 +74,7 @@
 		A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16328CA6EC4004D8EA9 /* slide1.gif */; };
 		A9EDE16828CA6EC4004D8EA9 /* slide3.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16428CA6EC4004D8EA9 /* slide3.gif */; };
 		A9EDE16928CA6EC4004D8EA9 /* slide2.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9EDE16528CA6EC4004D8EA9 /* slide2.gif */; };
+		B827A09228EB33E8008411CF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B827A09128EB33E8008411CF /* GoogleService-Info.plist */; };
 		B8DE382328C9261C0044F9D2 /* APIs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8DE382228C9261C0044F9D2 /* APIs.swift */; };
 /* End PBXBuildFile section */
 
@@ -224,6 +225,8 @@
 		A9EDE16328CA6EC4004D8EA9 /* slide1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide1.gif; sourceTree = "<group>"; };
 		A9EDE16428CA6EC4004D8EA9 /* slide3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide3.gif; sourceTree = "<group>"; };
 		A9EDE16528CA6EC4004D8EA9 /* slide2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = slide2.gif; sourceTree = "<group>"; };
+		B827A09128EB33E8008411CF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B8DCE17328EB3F8B0079D941 /* Z7M8C9A2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Z7M8C9A2.entitlements; sourceTree = "<group>"; };
 		B8DE382228C9261C0044F9D2 /* APIs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIs.swift; sourceTree = "<group>"; };
 		E7E60048122CE16091EF7EBE /* Pods-Z7M8C9A2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.release.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -367,9 +370,11 @@
 		965588C628C686E6007E6513 /* Z7M8C9A2 */ = {
 			isa = PBXGroup;
 			children = (
+				B8DCE17328EB3F8B0079D941 /* Z7M8C9A2.entitlements */,
 				B85772CF28C9249400F9A174 /* Utils */,
 				A96686B028C68B69003B2EF8 /* Views */,
 				965588C728C686E6007E6513 /* AppDelegate.swift */,
+				B827A09128EB33E8008411CF /* GoogleService-Info.plist */,
 				965588C928C686E6007E6513 /* SceneDelegate.swift */,
 				965588CB28C686E6007E6513 /* ViewController.swift */,
 				965588CD28C686E6007E6513 /* Main.storyboard */,
@@ -759,6 +764,7 @@
 				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
+				B827A09228EB33E8008411CF /* GoogleService-Info.plist in Resources */,
 				A9005B6D28CB9A9600F04257 /* ProfileTableViewCell.xib in Resources */,
 				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
 				15A2A9FF28CA817600343774 /* HomeViewController.xib in Resources */,
@@ -1115,6 +1121,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Z7M8C9A2 WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit Extension";
@@ -1145,6 +1152,7 @@
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Z7M8C9A2 WatchKit Extension/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit Extension";
@@ -1179,6 +1187,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Z7M8C9A2_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit App";
@@ -1211,6 +1220,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Z7M8C9A2_WatchKit_Extension;
 				INFOPLIST_KEY_CFBundleDisplayName = "Z7M8C9A2 WatchKit App";
@@ -1240,8 +1250,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Z7M8C9A2/Z7M8C9A2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Z7M8C9A2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1249,7 +1261,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1270,8 +1282,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Z7M8C9A2/Z7M8C9A2.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 89MB2CB67Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Z7M8C9A2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1279,7 +1293,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

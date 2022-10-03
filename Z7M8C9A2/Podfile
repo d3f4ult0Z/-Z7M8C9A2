@@ -6,6 +6,10 @@ target 'Z7M8C9A2' do
 
   pod 'Alamofire'
   pod 'AlamofireImage', '~> 4.1'
+  pod 'FirebaseAnalytics'
+  pod 'FirebaseAuth'
+  pod 'FirebaseFirestore'
+  pod 'FirebaseMessaging'
 
   use_frameworks!
 
