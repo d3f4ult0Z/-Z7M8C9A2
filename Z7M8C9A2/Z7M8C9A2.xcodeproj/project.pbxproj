@@ -347,14 +347,28 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		7FACDED128EE46D400C93D91 /* Movements */ = {
+			isa = PBXGroup;
+			children = (
+				7FACDED228EE470300C93D91 /* Cells */,
+				7F554B2028EC8F6A009AE5A5 /* MovimientoViewController.swift */,
+				7F554B2128EC8F6A009AE5A5 /* MovimientoViewController.xib */,
+			);
+			path = Movements;
+			sourceTree = "<group>";
+		};
+		7FACDED228EE470300C93D91 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7FD14D0928ECBE6600AA1284 /* TableViewCell.swift */,
+				7FD14D0A28ECBE6600AA1284 /* TableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		965588BB28C686E6007E6513 = {
 			isa = PBXGroup;
 			children = (
-				7F554B2028EC8F6A009AE5A5 /* MovimientoViewController.swift */,
-				7F554B2128EC8F6A009AE5A5 /* MovimientoViewController.xib */,
-				7FD14D0728ECB91300AA1284 /* Movimientos.swift */,
-				7FD14D0928ECBE6600AA1284 /* TableViewCell.swift */,
-				7FD14D0A28ECBE6600AA1284 /* TableViewCell.xib */,
 				965588C628C686E6007E6513 /* Z7M8C9A2 */,
 				965588DD28C686E8007E6513 /* Z7M8C9A2Tests */,
 				965588E728C686E8007E6513 /* Z7M8C9A2UITests */,
@@ -489,6 +503,7 @@
 		A96686B028C68B69003B2EF8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				7FACDED128EE46D400C93D91 /* Movements */,
 				1527625628CBB90600AEF24D /* Acounts */,
 				A9005B6428CB97B900F04257 /* Configuration */,
 				15A2A9F628CA809500343774 /* TabBar */,
@@ -507,6 +522,7 @@
 			children = (
 				A97E2C3A28E5FD5E009651AE /* LoginResponse.swift */,
 				152A217428E615D5007429C1 /* RegisterResponse.swift */,
+				7FD14D0728ECB91300AA1284 /* Movimientos.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
