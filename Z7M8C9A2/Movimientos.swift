@@ -12,10 +12,14 @@ public struct Movimientos {
     let tipoMovimiento : String
     let monto : Double
     let fecha : String
+    let imagen : String
     
-    init(tipoMovimiento: String, monto: Double, fecha: String) {
+    init(tipoMovimiento: String, monto: Double, fecha: String, imagen: String) {
         self.tipoMovimiento = tipoMovimiento
         self.monto = monto
         self.fecha = fecha
+        self.imagen = imagen
     }
+    
+
 }

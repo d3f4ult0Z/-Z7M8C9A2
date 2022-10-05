@@ -47,8 +47,10 @@ class MovimientoViewController: UIViewController {
         let numDias = -1*i
         let date = calendar.date(byAdding: .day, value: numDias, to: startDate)!
         let dateString = formatter.string(from: date)
+        let imageArray = ["monedas1","monedas2","monedas3"]
+        guard let imageName = imageArray.randomElement() else { return  }
 
-    movimientos.append(Movimientos(tipoMovimiento: moveType, monto:Double(Int.random(in: 50...10000)), fecha: dateString))
+        movimientos.append(Movimientos(tipoMovimiento: moveType, monto:Double(Int.random(in: 50...10000)), fecha: dateString, imagen: imageName))
 
     }
 
@@ -72,6 +74,7 @@ extension MovimientoViewController: UITableViewDataSource {
         cell.movimientoTypeLabel?.text = movimientosTable.tipoMovimiento
         cell.montoLabel?.text = "\(movimientosTable.monto)"
         cell.dateLabel?.text = movimientosTable.fecha
+        cell.imagen.image = UIImage(named: movimientosTable.imagen)
         
         if movimientosTable.tipoMovimiento == "Ingreso"{
             cell.montoLabel?.textColor = .green
