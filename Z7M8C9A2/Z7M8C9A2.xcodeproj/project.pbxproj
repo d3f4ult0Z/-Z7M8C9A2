@@ -24,6 +24,11 @@
 		15F58CE328CB8C3200ECA1D2 /* AbstractViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */; };
 		15F58CE428CB8C3200ECA1D2 /* AbstractViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F58CE228CB8C3200ECA1D2 /* AbstractViewController.xib */; };
 		2BEC3CF5519D7E00264CCDBB /* Pods_Z7M8C9A2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6CF719DBA30CA2732F0D51 /* Pods_Z7M8C9A2.framework */; };
+		7F554B2228EC8F6A009AE5A5 /* MovimientoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F554B2028EC8F6A009AE5A5 /* MovimientoViewController.swift */; };
+		7F554B2328EC8F6A009AE5A5 /* MovimientoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7F554B2128EC8F6A009AE5A5 /* MovimientoViewController.xib */; };
+		7FD14D0828ECB91300AA1284 /* Movimientos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD14D0728ECB91300AA1284 /* Movimientos.swift */; };
+		7FD14D0B28ECBE6600AA1284 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD14D0928ECBE6600AA1284 /* TableViewCell.swift */; };
+		7FD14D0C28ECBE6600AA1284 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7FD14D0A28ECBE6600AA1284 /* TableViewCell.xib */; };
 		965588C828C686E6007E6513 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965588C728C686E6007E6513 /* AppDelegate.swift */; };
 		965588CA28C686E6007E6513 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965588C928C686E6007E6513 /* SceneDelegate.swift */; };
 		965588CC28C686E6007E6513 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965588CB28C686E6007E6513 /* ViewController.swift */; };
@@ -166,6 +171,11 @@
 		15F58CE128CB8C3200ECA1D2 /* AbstractViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractViewController.swift; sourceTree = "<group>"; };
 		15F58CE228CB8C3200ECA1D2 /* AbstractViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AbstractViewController.xib; sourceTree = "<group>"; };
 		58A224DDB2A2F06D6F4A2D15 /* Pods-Z7M8C9A2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Z7M8C9A2.debug.xcconfig"; path = "Target Support Files/Pods-Z7M8C9A2/Pods-Z7M8C9A2.debug.xcconfig"; sourceTree = "<group>"; };
+		7F554B2028EC8F6A009AE5A5 /* MovimientoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovimientoViewController.swift; sourceTree = "<group>"; };
+		7F554B2128EC8F6A009AE5A5 /* MovimientoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovimientoViewController.xib; sourceTree = "<group>"; };
+		7FD14D0728ECB91300AA1284 /* Movimientos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movimientos.swift; sourceTree = "<group>"; };
+		7FD14D0928ECBE6600AA1284 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		7FD14D0A28ECBE6600AA1284 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		965588C428C686E6007E6513 /* Z7M8C9A2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Z7M8C9A2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965588C728C686E6007E6513 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		965588C928C686E6007E6513 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -340,6 +350,11 @@
 		965588BB28C686E6007E6513 = {
 			isa = PBXGroup;
 			children = (
+				7F554B2028EC8F6A009AE5A5 /* MovimientoViewController.swift */,
+				7F554B2128EC8F6A009AE5A5 /* MovimientoViewController.xib */,
+				7FD14D0728ECB91300AA1284 /* Movimientos.swift */,
+				7FD14D0928ECBE6600AA1284 /* TableViewCell.swift */,
+				7FD14D0A28ECBE6600AA1284 /* TableViewCell.xib */,
 				965588C628C686E6007E6513 /* Z7M8C9A2 */,
 				965588DD28C686E8007E6513 /* Z7M8C9A2Tests */,
 				965588E728C686E8007E6513 /* Z7M8C9A2UITests */,
@@ -756,6 +771,7 @@
 				1527625A28CBB93D00AEF24D /* AcountViewController.xib in Resources */,
 				A9005B7528CBA66000F04257 /* EditUserDataTableViewCell.xib in Resources */,
 				A96686B428C68B98003B2EF8 /* StartViewController.xib in Resources */,
+				7FD14D0C28ECBE6600AA1284 /* TableViewCell.xib in Resources */,
 				A9EDE16628CA6EC4004D8EA9 /* slide4.gif in Resources */,
 				15F58CE428CB8C3200ECA1D2 /* AbstractViewController.xib in Resources */,
 				1527625F28CBB98000AEF24D /* DataTableViewCell.xib in Resources */,
@@ -764,6 +780,7 @@
 				A9EDE16728CA6EC4004D8EA9 /* slide1.gif in Resources */,
 				965588CF28C686E6007E6513 /* Main.storyboard in Resources */,
 				1572C81928C7AA9000E16901 /* RegisterFormViewController.xib in Resources */,
+				7F554B2328EC8F6A009AE5A5 /* MovimientoViewController.xib in Resources */,
 				B827A09228EB33E8008411CF /* GoogleService-Info.plist in Resources */,
 				A9005B6D28CB9A9600F04257 /* ProfileTableViewCell.xib in Resources */,
 				1572C81328C7AA5300E16901 /* RegisterViewController.xib in Resources */,
@@ -871,6 +888,8 @@
 				152A217528E615D5007429C1 /* RegisterResponse.swift in Sources */,
 				1572C81828C7AA9000E16901 /* RegisterFormViewController.swift in Sources */,
 				A96686B328C68B98003B2EF8 /* StartViewController.swift in Sources */,
+				7FD14D0B28ECBE6600AA1284 /* TableViewCell.swift in Sources */,
+				7FD14D0828ECB91300AA1284 /* Movimientos.swift in Sources */,
 				15A2A9FE28CA817500343774 /* HomeViewController.swift in Sources */,
 				A97E2C3B28E5FD5E009651AE /* LoginResponse.swift in Sources */,
 				A9005B7C28CBA9E700F04257 /* PrivacyTableViewCell.swift in Sources */,
@@ -882,6 +901,7 @@
 				1572C81228C7AA5300E16901 /* RegisterViewController.swift in Sources */,
 				A9005B6328CB971E00F04257 /* YorchTableView.swift in Sources */,
 				A9005B6F28CB9D5300F04257 /* RegisterProtocol.swift in Sources */,
+				7F554B2228EC8F6A009AE5A5 /* MovimientoViewController.swift in Sources */,
 				A97EF0E328C7F317001E291F /* StartOnboardingViewController.swift in Sources */,
 				A9005B8028CBAA4C00F04257 /* LogOutTableViewCell.swift in Sources */,
 				A9005B8428CBB49C00F04257 /* EditUserDataViewController.swift in Sources */,
