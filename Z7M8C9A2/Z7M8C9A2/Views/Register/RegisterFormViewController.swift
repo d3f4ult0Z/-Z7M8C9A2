@@ -20,8 +20,6 @@ class RegisterFormViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = false
-
-      
     }
 
     @IBAction func actionBtnRegistrar(_ sender: Any) {
@@ -50,8 +48,9 @@ class RegisterFormViewController: BaseViewController {
             self.alerta(mensaje: "Verifica que las contraseñas sean iguales")
             return
         }
+        self.loading = true
         API.register(user: usuario, mail: mail, name: nombreCompleto, phone: numero, pass: contraseña).request(model: RegisterResponse.self, handler: {response,error,statusCode in
-            
+            self.loading = false
             if let response = response {
                 if response.success == true{
                     self.alerta(mensaje: response.mensaje, handler: {_ in

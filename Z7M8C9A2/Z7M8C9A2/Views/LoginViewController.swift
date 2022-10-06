@@ -38,9 +38,9 @@ class LoginViewController: BaseViewController {
             self.alerta(mensaje: "Por favor agregue su contraseña")
             return
         }
-        
+        self.loading = true
         API.login(user: usuario, pass: password).request(model: LoginResponse.self, handler: {response,error,statusCode in
-            
+            self.loading = false
             if let response=response {
                 if response.success == true {
                     self.navigationController?.pushViewController(TabBarViewController(), animated: true)

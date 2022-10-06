@@ -7,15 +7,24 @@
 
 import UIKit
 
-class AcountViewController: UIViewController {
+class AcountViewController: BaseViewController {
 
     @IBOutlet weak var tableViewDatos: YorchTableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableViewSetup()
-
+        // Test Code
+        self.loading = true
+        self.tableViewDatos.isHidden = true
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
+            self.loading = false
+            self.tableViewDatos.isHidden = false
+        }
     }
+    
+    
+    
     
     func tableViewSetup(){
         
@@ -52,7 +61,6 @@ extension AcountViewController : UITableViewDataSource, UITableViewDelegate{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         switch(indexPath.section, indexPath.row){
             case (0, 0):
             let conntante: DataTableViewCell = tableView.deque(atIndexPath: indexPath)

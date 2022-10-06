@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ConfigurationViewController: UIViewController {
+class ConfigurationViewController: BaseViewController {
     
     
     @IBOutlet weak var tableView: YorchTableView!
@@ -16,6 +16,14 @@ class ConfigurationViewController: UIViewController {
         super.viewDidLoad()
         self.tableViewSetup()
         self.navigationController?.isNavigationBarHidden = true
+        // Test Code
+        self.loading = true
+        self.tableView.isHidden = true
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
+            self.loading = false
+            self.tableView.isHidden = false
+        }
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {

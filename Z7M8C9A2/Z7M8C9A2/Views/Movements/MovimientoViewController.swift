@@ -7,20 +7,31 @@
 
 import UIKit
 
-class MovimientoViewController: UIViewController {
+class MovimientoViewController: BaseViewController {
     
     var movimientos = [Movimientos]()
     let startDate = Date()
     let formatter = DateFormatter()
     var calendar = Calendar.current
-
+    
     @IBOutlet weak var tableView: YorchTableView!
     
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableviewSetup()
+        // Test Code
+        self.loading = true
+        self.tableView.isHidden = true
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2){
+            self.loading = false
+            self.tableView.isHidden = false
+        }
+    }
+    
+    
+    func tableviewSetup() {
         TableViewCell.register(tableView: self.tableView)
         
         tableView.dataSource = self
@@ -28,34 +39,32 @@ class MovimientoViewController: UIViewController {
         
         formatter.dateFormat = "MM/dd/yyyy"
         llenarMovimientos()
-        
-
-        // Do any additional setup after loading the view.
     }
+    
     func llenarMovimientos(){
-
-    for i in 0...50{
         
-        var moveType = ""
+        for i in 0...50{
+            
+            var moveType = ""
+            
+            if i%2 == 0 {
+                moveType = "Ingreso"
+            }
+            else {
+                moveType = "Egreso"
+            }
+            let numDias = -1*i
+            let date = calendar.date(byAdding: .day, value: numDias, to: startDate)!
+            let dateString = formatter.string(from: date)
+            let imageArray = ["monedas1","monedas2","monedas3"]
+            guard let imageName = imageArray.randomElement() else { return  }
+            
+            movimientos.append(Movimientos(tipoMovimiento: moveType, monto:Double(Int.random(in: 50...10000)), fecha: dateString, imagen: imageName))
+            
+        }
         
-        if i%2 == 0 {
-            moveType = "Ingreso"
-        }
-        else {
-            moveType = "Egreso"
-        }
-        let numDias = -1*i
-        let date = calendar.date(byAdding: .day, value: numDias, to: startDate)!
-        let dateString = formatter.string(from: date)
-        let imageArray = ["monedas1","monedas2","monedas3"]
-        guard let imageName = imageArray.randomElement() else { return  }
-
-        movimientos.append(Movimientos(tipoMovimiento: moveType, monto:Double(Int.random(in: 50...10000)), fecha: dateString, imagen: imageName))
-
     }
-
-    }
-
+    
 }
 
 
@@ -68,9 +77,7 @@ extension MovimientoViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: TableViewCell = tableView.deque(atIndexPath: indexPath)
-        
         let movimientosTable = movimientos[indexPath.row]
-        
         cell.movimientoTypeLabel?.text = movimientosTable.tipoMovimiento
         cell.montoLabel?.text = "\(movimientosTable.monto)"
         cell.dateLabel?.text = movimientosTable.fecha
@@ -82,10 +89,8 @@ extension MovimientoViewController: UITableViewDataSource {
         else {
             cell.montoLabel?.textColor = .red
         }
+        return cell
         
-            
-            return cell
-
     }
     
     

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: BaseViewController {
     @IBOutlet weak var btnRegistroApple: UIButton!
     
     @IBOutlet weak var btnRegistroFacebook: UIButton!
@@ -19,6 +19,7 @@ class RegisterViewController: UIViewController {
         super.viewDidLoad()
         self.setup()
         self.navigationController?.isNavigationBarHidden = true
+        loading = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,11 +40,11 @@ class RegisterViewController: UIViewController {
         UserDefaults().set(true, forKey: "ViewOnboard")
     }
 
-    @IBAction func ActionEntrarInvitado(_ sender: Any) {
-        self.navigationController?.pushViewController(TabBarViewController(), animated: true)
+    @IBAction func ActionEntrarInvitado(_ sender: Any) {        self.navigationController?.pushViewController(TabBarViewController(), animated: true)
     }
    
     @IBAction func btnRegistroApple(_ sender: Any) {
+        alerta(mensaje: "Servicio no disponible")
     }
     
     @IBAction func actionRegistroFormulario(_ sender: Any) {
